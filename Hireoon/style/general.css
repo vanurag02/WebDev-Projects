@@ -1,0 +1,322 @@
+/* 
+    STYLE GUIDE
+    ===============================================
+    -- TYPOGRAPHY
+
+    - Font Family
+    Google Sans
+    Manrope
+
+    - Font size (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+    
+    - Font Weight
+    Regular (Default): 400
+    Medium: 500
+    Semi-bold: 600
+    Bold: 700
+
+    - Line height
+    Default: 1
+    Small: 1.05
+    Medium: 1.2
+    Paragraph default: 1.6
+    Large: 1.8
+
+    - Letter spacing - OPTIONAL | WILL BE REMOVED IF NOT REQUIRED
+    0.5px
+    0.75px
+
+    ********************************************************************
+    
+    -- COLOURS
+
+    Title		        #161616
+    Text		        #333333
+    Miscellaneous   #888888
+    Background	    #FFFFFF
+    Primary		      #0056FB
+    Success		      #30c74f
+    Error		        #DC2323
+    Warning		      #FEC901
+    ------------------------------------------------
+
+    PRIMARY
+
+    50 	    #edf7ff
+    100 	  #d6ecff
+    200	    #b5e0ff
+    300 	  #83ceff
+    400	    #48b2ff
+    500	    #1e8dff
+    600	    #066cff
+    700  	  #0056fb •
+    800	    #0843c5
+    900	    #0d3d9b
+    950	    #0e265d
+    ===================================================
+
+    SUCCESS
+
+    50	    #f1fcf2
+    100	    #defae3
+    200	    #bff3c9
+    300 	  #8de89f
+    400	    #54d46e
+    500	    #30c74f •
+    600	    #1f9a38
+    700	    #1c7930
+    800	    #1b602a
+    900	    #184f25
+    950	    #082b10
+    ===================================================
+
+    ERROR
+
+    50      #fef2f2
+    100     #fee2e2
+    200     #fecaca
+    300     #fca5a5
+    400     #f87171
+    500     #ef4444
+    600     #dc2323 •
+    700     #b91c1c
+    800     #991b1b
+    900     #7f1d1d
+    950     #450a0a
+    ===================================================
+
+    WARNING
+
+    50      #fffee7
+    100     #fffdc1
+    200     #fff786
+    300     #ffea41
+    400     #ffd80e
+    500     #fec901 •
+    600     #d09300
+    700     #a66902
+    800     #89510a
+    900     #74420f
+    950     #442204
+
+    ===================================================
+
+    BLACK
+
+    50 	    #f6f6f6
+    100 	  #e7e7e7
+    200	    #d1d1d1
+    300	    #b0b0b0
+    400	    #888888
+    500	    #6d6d6d
+    600	    #5d5d5d
+    700	    #4f4f4f
+    800	    #454545
+    900 	  #3d3d3d
+    950	    #161616 •
+        
+    
+    ********************************************************************
+    
+    -- SHADOW
+    - DEFAULT
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+    -HOVER
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    
+    ********************************************************************
+    
+    -- BORDER RADIUS
+    - 2px
+    - 4px
+    - 8px
+
+    ********************************************************************
+    
+    -- WHITE SPACING
+
+    - Spacing (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Google Sans", sans-serif !important;
+  line-height: 1;
+  font-weight: 400;
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+
+/* HEADINGS START */
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #212121;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  color: #111111;
+  font-size: 7.4rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  color: #1d1e1c;
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 6.4rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0d3d9b;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.25px;
+}
+
+/* HEADINGS END */
+
+/* BUTTON START */
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.btn-primary {
+  text-transform: capitalize;
+  background-color: #0843c5;
+  border: 2px solid #0843c5;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #0d3d9b;
+  border: 2px solid #0d3d9b;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #0d3d9b;
+  border: 2px solid #0d3d9b;
+}
+/* BUTTON END */
+
+/* CONTAINER START */
+
+.container {
+  /* 1140px */
+  max-width: 140rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.container-text-center {
+  max-width: 140rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* CONTAINER END */
+
+/* GRID START */
+.grid {
+  display: grid;
+  column-gap: 4.8rem;
+  row-gap: 6.4rem;
+
+  /* margin-bottom: 9.6rem; */
+}
+
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+  margin-bottom: 4.8rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+/* GRID END */
+
+/* SPACING START */
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+/* SPACING END */
+
+/* INPUT AND PLACEHOLDERS FONT START */
+
+input {
+  font-family: inherit;
+  transition: 0.2s all ease-in-out;
+}
+
+input::placeholder {
+  font-family: "Google Sans";
+  font-weight: 500;
+}
+
+/* INPUT AND PLACEHOLDERS FONT END */
+
+/* =================== REUSABLE COMPONENTS END ===================*/

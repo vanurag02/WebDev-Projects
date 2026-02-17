@@ -1,0 +1,12 @@
+@media (max-width: 699px) {
+  .navbar-list {
+    background-color: aqua;
+    display: block;
+    width: 280px;
+    height: auto;
+    position: absolute;
+    top: 8rem;
+    right: 0;
+    padding: 3.2rem 0;
+  }
+}
