@@ -10,6 +10,7 @@
 .logo {
   height: 2.2rem;
 }
+
 /* =================== HEADER END ===================*/
 
 /* =================== NAVBAR START ===================*/
@@ -50,6 +51,9 @@
   box-shadow:
     rgba(0, 0, 0, 0.05) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+  opacity: 0;
+  animation: fadeOnly 0.4s ease forwards;
 }
 
 .sticky .section-hero {
@@ -65,7 +69,7 @@
 }
 
 .hero {
-  max-width: 140rem;
+  max-width: 130rem;
   margin: 0 auto;
   padding: 0 3.2rem;
   display: grid;
@@ -96,12 +100,12 @@
 
 .heading-featured-in {
   font-size: 1.6rem;
-  text-transform: uppercase;
-  letter-spacing: 0.75px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
-  margin-bottom: 3.2rem;
+  text-transform: uppercase;
   color: #888888;
+  letter-spacing: 0.75px;
+  margin-bottom: 3.2rem;
 }
 
 .logos-container {
@@ -111,11 +115,13 @@
 
 .logos-container img {
   height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
 }
 
 /* =================== FEATURED IN SECTION END ===================*/
 
-/* =================== FEATURED IN SECTION START ===================*/
+/* =================== FEATURES SECTION START ===================*/
 
 .section-features {
   padding: 9.6rem 0 3.2rem 0;
@@ -148,6 +154,9 @@
   width: 3rem;
   height: 3rem;
   color: #111111;
+  background-color: #f5f5f5;
+  padding: 2.4rem;
+  border-radius: 50%;
   margin-bottom: 1.2rem;
 }
 
@@ -158,7 +167,7 @@
   line-height: 1.6;
 }
 
-/* =================== FEATURED IN SECTION END ===================*/
+/* =================== FEATURES SECTION END ===================*/
 
 /* =================== VIRTUAL TOUR SECTION START ===================*/
 
@@ -213,7 +222,7 @@
   height: 3.6rem;
   width: 3.6rem;
   color: #ffffff;
-  background-color: #1d1e1c;
+  background-color: rgba(29, 30, 28, 0.85);
   padding: 2.4rem 3.2rem;
   border-radius: 12px;
   cursor: pointer;
@@ -221,8 +230,7 @@
 }
 
 .play-icon:hover {
-  padding: 3.2rem;
-  border-radius: 50%;
+  background-color: #1d1e1c;
 }
 
 /* =================== VIRTUAL TOUR SECTION END ===================*/
@@ -264,8 +272,9 @@
 }
 
 .stat-description {
+  font-size: 1.8rem;
+  font-weight: 600;
   color: #292929;
-  font-size: 1.4rem;
   text-transform: capitalize;
   margin-top: 1.2rem;
 }
@@ -444,14 +453,15 @@
 
 .faq-text {
   color: #1d1e1c;
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1.4;
 }
 
 .question {
-  padding: 1.2rem 1.2rem 2rem 1.2rem;
+  padding: 1.4rem 1.4rem 2rem 1.4rem;
   margin-bottom: 2rem;
   border-bottom: 2px solid #1d1e1c;
+  cursor: pointer;
   transition: 0.2s all ease-in-out;
 }
 
@@ -468,6 +478,7 @@
 }
 
 .question-text {
+  width: 48rem;
   font-size: 1.8rem;
   font-weight: 600;
   color: #1d1e1c;
@@ -476,16 +487,32 @@
 
 .faq-answer {
   width: 42rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #1d1e1c;
-  text-align: justify;
-  line-height: 1.2;
+  /* text-align: justify; */
+  line-height: 1.3;
+  max-height: 0;
+  overflow: hidden;
+
+  transition: max-height 0.4s ease;
 }
 
 .down-arrow {
   height: 2.4rem;
   width: 2.4rem;
   color: #111111;
+  transition: transform 0.4s ease;
+}
+
+/* Active question */
+.question.active .faq-answer {
+  max-height: 500px; /* big enough to fit content */
+}
+
+.question.active {
+  box-shadow:
+    rgba(0, 0, 0, 0.15) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 /* =================== FAQ SECTION END ===================*/
@@ -670,3 +697,12 @@
   text-decoration: underline;
 }
 /* =================== FOOTER SECTION END ===================*/
+
+@keyframes fadeOnly {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

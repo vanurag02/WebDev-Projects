@@ -8,6 +8,7 @@
     <!-- EXTERNAL CSS -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./general.css">
+    <link rel="stylesheet" href="./queries.css">
 
     <!-- FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
@@ -39,12 +40,17 @@
             <ul class="navbar-list">
                 <li><a href="#" class="navbar-link">About</a></li>
                 <li><a href="#" class="navbar-link">Pricing</a></li>
-                <li><a href="#" class="navbar-link">Blog</a></li>
+                <li><a href="#blogs" class="navbar-link">Blogs</a></li>
                 <li><a href="#" class="navbar-link">Events</a></li>
                 <li><a href="#" class="navbar-link btn btn-secondary">Log in</a></li>
                 <li><a href="#" class="navbar-link btn btn-primary">Sign up</a></li>
             </ul>
         </nav>
+
+        <!-- <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button> -->
     </header>
 
     <!-- HEADER END -->
@@ -270,7 +276,7 @@
         <!-- TESTIMONIAL SECTION END -->
 
         <!-- BLOGS SECTION START -->
-        <section class="section-blogs">
+        <section class="section-blogs" id="blogs">
             <div class="container-text-center">
                 <span class="subheading">Cowork Chronicles</span>
                 <h2 class="heading-virtual-tour">Insights, Innovation, and Inspiration</h2>
@@ -279,7 +285,7 @@
                     the Cowork experience.
                 </p>
             </div>
-            <div class="blog-container grid grid--3-cols">
+            <div class="container grid grid--3-cols margin-bottom-md">
                 <div class="blog-1">
                     <img src="Images/blog-1.jpg" alt="" class="blog-img">
                     <div class="blog-details">
@@ -311,7 +317,7 @@
                 </div>
             </div>
             <div class="container-text-center">
-                <a href="" class="btn btn-secondary" style="margin-top: 3.2rem;">View all</a>
+                <a href="" class="btn btn-secondary">View all</a>
             </div>
         </section>
         <!-- BLOGS SECTION END -->
@@ -330,12 +336,13 @@
                     </p>
                 </div>
                 <div class="questions">
+                    <!-- QUESTION 1 START -->
                     <div class="question">
                         <div class="question-icon">
                             <p class="question-text">
                                 How flexible are Cowork's membership plans?
                             </p>
-                            <ion-icon name="chevron-up-circle-outline" class="down-arrow"></ion-icon>
+                            <ion-icon name="chevron-down-outline" class="down-arrow"></ion-icon>
                         </div>
                         <p class="faq-answer">
                             Our membership plans are flexible and designed to fit your needs. Choose from daily,
@@ -343,46 +350,82 @@
                             schedule and availability.
                         </p>
                     </div>
+                    <!-- QUESTION 1 END -->
+
+                    <!-- QUESTION 2 START -->
                     <div class="question">
                         <div class="question-icon">
                             <p class="question-text">
                                 What kind of events and networking opportunities does Cowork provide?
                             </p>
-                            <ion-icon name="chevron-down-circle-outline" class="down-arrow"></ion-icon>
+                            <ion-icon name="chevron-down-outline" class="down-arrow"></ion-icon>
                         </div>
+                        <p class="faq-answer">
+                            Cowork hosts workshops, industry talks, and networking meetups to help members connect,
+                            collaborate, and grow professionally.
+                        </p>
                     </div>
+                    <!-- QUESTION 2 END -->
+
+                    <!-- QUESTION 3 START -->
                     <div class="question">
                         <div class="question-icon">
                             <p class="question-text">
                                 Can I tour Cowrok space before committing to a membership?
                             </p>
-                            <ion-icon name="chevron-down-circle-outline" class="down-arrow"></ion-icon>
+                            <ion-icon name="chevron-down-outline" class="down-arrow"></ion-icon>
                         </div>
+                        <p class="faq-answer">
+                            Yes. You can schedule a tour to explore the workspace, amenities, and available plans before
+                            making a decision.
+                        </p>
                     </div>
+                    <!-- QUESTION 3 END -->
+
+                    <!-- QUESTION 4 START -->
                     <div class="question">
                         <div class="question-icon">
                             <p class="question-text">
                                 Is Cowork suitable for remote teams and distributed workforces?
                             </p>
-                            <ion-icon name="chevron-down-circle-outline" class="down-arrow"></ion-icon>
+                            <ion-icon name="chevron-down-outline" class="down-arrow"></ion-icon>
                         </div>
+                        <p class="faq-answer">
+                            Yes. Cowork offers flexible desks, private offices, and meeting rooms designed to support
+                            remote teams and collaboration.
+                        </p>
                     </div>
+                    <!-- QUESTION 4 END -->
+
+                    <!-- QUESTION 5 START -->
                     <div class="question">
                         <div class="question-icon">
                             <p class="question-text">
                                 What measures does Cowork take for environmental sustainability?
                             </p>
-                            <ion-icon name="chevron-down-circle-outline" class="down-arrow"></ion-icon>
+                            <ion-icon name="chevron-down-outline" class="down-arrow"></ion-icon>
                         </div>
+                        <p class="faq-answer">
+                            Cowork follows eco-friendly practices such as energy-efficient lighting and responsible
+                            waste management to reduce environmental impact.
+                        </p>
                     </div>
+                    <!-- QUESTION 5 START -->
+
+                    <!-- QUESTION 6 START -->
                     <div class="question">
                         <div class="question-icon">
                             <p class="question-text">
                                 Still has questions?
                             </p>
-                            <ion-icon name="chevron-down-circle-outline" class="down-arrow"></ion-icon>
+                            <ion-icon name="chevron-down-outline" class="down-arrow"></ion-icon>
                         </div>
+                        <p class="faq-answer">
+                            Feel free to reach to our support team for personalized assistance and additional
+                            information.
+                        </p>
                     </div>
+                    <!-- QUESTION 6 ED -->
                 </div>
             </div>
         </section>
