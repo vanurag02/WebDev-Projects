@@ -1,4 +1,5 @@
 /*
+  1 rem = 16px in Chrome
   --- 01 TYPOGRAPHY SYSTEM ---
 
   - Font Sizes
@@ -147,11 +148,11 @@ body {
   font-size: 2rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
-  border-radius: 10px;
+  border-radius: 8px;
   border: none;
   cursor: pointer;
   font-family: inherit;
-  transition: all 0.3s;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn--full:link,
