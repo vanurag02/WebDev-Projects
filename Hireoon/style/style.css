@@ -46,7 +46,7 @@
   padding-top: 0;
   padding-bottom: 0;
   background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(6px); /* Adds the blur effect */
+  backdrop-filter: blur(10px); /* Adds the blur effect */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
   z-index: 999;
   box-shadow:
@@ -67,7 +67,7 @@
 }
 
 .hero {
-  max-width: 140rem;
+  max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
 }
@@ -271,6 +271,12 @@
 
 .section-featured-jobs {
   padding: 4.8rem 0 9.6rem 0;
+}
+
+.job-grid {
+  display: grid;
+  column-gap: 2.4rem;
+  row-gap: 6.4rem;
 }
 
 .job-container {
