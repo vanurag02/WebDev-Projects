@@ -11,27 +11,113 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
 
 */
 
-/* =================== BELOW 1344px (SMALLER DESKTOPS) ===================*/
+/* =================== MOBILE NAV =================== */
 
-@media (max-width: 84em) {
-  .hero {
-    max-width: 120rem;
+@media (max-width: 768px) {
+  /* Keep header above overlay */
+  .header {
+    position: relative;
+    z-index: 2001;
   }
 
-  .heading-primary {
-    font-size: 7.4rem;
+  .logo-wrapper {
+    position: relative;
+    z-index: 2002;
   }
 
-  .heading-tertiary {
-    font-size: 2.4rem;
+  logo-light {
+    height: 2.4rem;
   }
 
-  .heading-cta {
-    font-size: 8.6rem;
+  /* Show hamburger */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 2000;
   }
 
-  .question-text,
-  .faq-answer {
-    width: 40rem;
+  /* Full screen overlay */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgb(29, 30, 28, 0.96);
+    backdrop-filter: blur(6px); /* Adds the blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+
+    padding: 12rem 4.8rem 4.8rem 4.8rem;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+
+    z-index: 1500;
+  }
+
+  /* Vertical menu */
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  /* Large links */
+  .navbar-link {
+    font-size: 4rem;
+    color: #ffffff;
+  }
+
+  .navbar-link:hover {
+    color: #cccccc;
+  }
+
+  /* Open state */
+  .nav-open .navbar {
+    transform: translateX(0);
+  }
+
+  /* Switch logos */
+  .nav-open .logo-dark {
+    display: none;
+  }
+
+  .nav-open .logo-light {
+    display: block;
+  }
+
+  /* Switch icons */
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+    color: #ffffff;
+  }
+
+  /* Mobile menu button styling */
+  .nav-open .btn-primary {
+    font-size: 4rem;
+    background-color: #ffffff;
+    color: #1d1e1c;
+    padding: 1.8rem 3.6rem;
+  }
+  .nav-open .btn-secondary {
+    font-size: 4rem;
+    background-color: #1d1e1c;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 1.8rem 3.6rem;
+  }
+
+  /* Prevent hover inversion inside mobile menu */
+  .nav-open .btn-primary:hover,
+  .nav-open .btn-secondary:hover {
+    color: #1d1e1c;
   }
 }

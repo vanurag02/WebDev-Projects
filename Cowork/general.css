@@ -81,6 +81,10 @@ body {
   overflow-x: hidden;
 }
 
+body.nav-open {
+  overflow: hidden;
+}
+
 *:focus {
   outline: none;
   outline: 3px dotted #1d1e1c;
