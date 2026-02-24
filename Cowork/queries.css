@@ -11,6 +11,88 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
 
 */
 
+/* =================== BELOW 1344px (SMALLER DESKTOPS) =================== */
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 7.4rem;
+  }
+}
+
+/* =================== BELOW 1200px (LANDSCAPE TABLETS) =================== */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  /* .container{
+    max-width: ;
+  } */
+
+  .grid {
+    display: grid;
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .hero-description {
+    font-size: 1.8rem;
+  }
+
+  .virtual-tour-description {
+    font-size: 1.8rem;
+  }
+
+  .container-video {
+    width: 100%;
+  }
+
+  .heading-statistics {
+    font-size: 3.8rem;
+  }
+
+  .stat-value {
+    font-size: 3.2rem;
+  }
+
+  .stat-description {
+    font-size: 1.6rem;
+  }
+}
+
+/* =================== BELOW 944px (TABLETS) =================== */
+
+@media (max-width: 59em) {
+  /* 8px / 16px = 0.5 = 50% */
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+}
+
 /* =================== MOBILE NAV =================== */
 
 @media (max-width: 768px) {
