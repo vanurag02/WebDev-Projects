@@ -67,6 +67,8 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
 
 /* =================== BELOW 944px (TABLETS) =================== */
 
+/* =================== BELOW 944px (TABLETS) =================== */
+
 @media (max-width: 59em) {
   /* 8px / 16px = 0.5 = 50% */
   html {
@@ -90,6 +92,42 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
 
   .logos img {
     height: 2.4rem;
+  }
+
+  .feature-heading {
+    font-size: 2.4rem;
+  }
+
+  .feature-description {
+    font-size: 1.6rem;
+  }
+
+  .statistics {
+    column-gap: 0rem;
+  }
+
+  .testimonial-container {
+    padding: 2.4rem;
+  }
+
+  .testimonial-img {
+    width: 60px;
+  }
+
+  .heading-cta {
+    font-size: 7.4rem;
+  }
+
+  .links-section {
+    gap: 0rem;
+  }
+
+  .footer-heading {
+    font-size: 1.3rem;
+  }
+
+  .footer-link {
+    font-size: 1.4rem;
   }
 }
 
@@ -180,26 +218,5 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
   .nav-open .icon-mobile-nav[name="close-outline"] {
     display: block;
     color: #ffffff;
-  }
-
-  /* Mobile menu button styling */
-  .nav-open .btn-primary {
-    font-size: 4rem;
-    background-color: #ffffff;
-    color: #1d1e1c;
-    padding: 1.8rem 3.6rem;
-  }
-  .nav-open .btn-secondary {
-    font-size: 4rem;
-    background-color: #1d1e1c;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    padding: 1.8rem 3.6rem;
-  }
-
-  /* Prevent hover inversion inside mobile menu */
-  .nav-open .btn-primary:hover,
-  .nav-open .btn-secondary:hover {
-    color: #1d1e1c;
   }
 }
