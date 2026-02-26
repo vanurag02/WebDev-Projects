@@ -172,7 +172,7 @@
 }
 
 .feature-content {
-  padding: 2.4rem 2.4rem;
+  padding: 2.4rem;
   text-align: center;
 }
 
@@ -673,21 +673,15 @@
 }
 
 .footer-heading {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 2.4rem;
 }
 
-.explore-more {
-  padding: 1.2rem;
-}
-
-.stay-connected {
-  padding: 1.2rem;
-}
-
+.explore-more,
+.stay-connected,
 .follow-us {
   padding: 1.2rem;
 }
@@ -701,7 +695,7 @@
 
 .footer-link {
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #bfbfbf;
   transition: 0.2s all ease-in-out;
 }
