@@ -153,11 +153,6 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
     padding: 0 2rem;
   }
 
-  .heading-secondary,
-  .subheading {
-    text-align: center;
-  }
-
   .logos-container img {
     height: 2.4rem;
   }
@@ -299,6 +294,10 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
     grid-template-columns: 1fr;
   }
 
+  .heading-secondary {
+    margin-bottom: 6.4rem;
+  }
+
   .section-hero {
     padding: 2.4rem 0 6.4rem 0;
   }
@@ -315,8 +314,8 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
     height: 1.8rem;
   }
 
-  .text-box {
-    text-align: center;
+  .heading-statistics {
+    font-size: 3.6rem;
   }
 
   .blog-title {
@@ -325,26 +324,21 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
   }
 
   .faq-heading {
-    font-size: 4.8rem;
-    text-align: center;
-  }
-
-  .faq-text {
-    max-width: 60rem;
+    font-size: 4rem;
   }
 
   .questions {
-    min-width: 62rem;
+    width: 100%;
   }
 
   .question-text {
-    max-width: 56rem;
+    width: 42rem;
     font-size: 2rem;
     line-height: 1.4;
   }
 
   .faq-answer {
-    max-width: 54rem;
+    width: 90%;
     font-size: 1.8rem;
     color: #1d1e1c;
     text-align: justify;
@@ -355,11 +349,11 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
   }
 
   .heading-cta {
-    font-size: 6.2rem;
+    font-size: 5.8rem;
   }
 
   .cta-description {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .newsletter {
@@ -391,7 +385,7 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
   }
 
   .links-section {
-    gap: 1.2rem;
+    gap: 0.4rem;
     text-align: center;
   }
 
@@ -412,7 +406,7 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
 
 @media (max-width: 468px) {
   .logos-container img {
-    height: 1.8rem;
+    height: 1.4rem;
   }
 }
 
