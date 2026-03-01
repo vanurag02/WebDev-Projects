@@ -150,7 +150,16 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
   }
 
   .container-text-center {
-    padding: 0 1.6rem;
+    padding: 0 2rem;
+  }
+
+  .heading-secondary,
+  .subheading {
+    text-align: center;
+  }
+
+  .logos-container img {
+    height: 2.4rem;
   }
 
   .feature-content {
@@ -159,6 +168,10 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
 
   .feature-description {
     font-size: 2rem;
+  }
+
+  .heading-virtual-tour {
+    font-size: 5.2rem;
   }
 
   .main-container {
@@ -262,6 +275,144 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+/* =================== BELOW 620px =================== */
+
+@media (max-width: 620px) {
+  .logos-container img {
+    height: 2rem;
+  }
+}
+
+/* =================== BELOW 544px (PHONES) =================== */
+
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 2.4rem;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .logos-container img {
+    height: 1.8rem;
+  }
+
+  .text-box {
+    text-align: center;
+  }
+
+  .blog-title {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .faq-heading {
+    font-size: 4.8rem;
+    text-align: center;
+  }
+
+  .faq-text {
+    max-width: 60rem;
+  }
+
+  .questions {
+    min-width: 62rem;
+  }
+
+  .question-text {
+    max-width: 56rem;
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  .faq-answer {
+    max-width: 54rem;
+    font-size: 1.8rem;
+    color: #1d1e1c;
+    text-align: justify;
+    line-height: 1.3;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .heading-cta {
+    font-size: 6.2rem;
+  }
+
+  .cta-description {
+    font-size: 2.2rem;
+  }
+
+  .newsletter {
+    text-align: center;
+    padding: 4.8rem 1.6rem 1.6rem 1.6rem;
+  }
+
+  .footer-logo {
+    height: 3.2rem;
+  }
+
+  .join-text {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .newsletter-form {
+    margin: 3.2rem 0 3.2rem 0;
+  }
+
+  .form-consent {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .links {
+    padding: 2.4rem 0rem 3.2rem 0;
+  }
+
+  .links-section {
+    gap: 1.2rem;
+    text-align: center;
+  }
+
+  .footer-legal {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  input::placeholder {
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: #bfbfbf;
+  }
+}
+
+/* =================== BELOW 468px (PHONES) =================== */
+
+@media (max-width: 468px) {
+  .logos-container img {
+    height: 1.8rem;
   }
 }
 
