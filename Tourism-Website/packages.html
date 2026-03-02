@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Packages - Wanderlust Tours</title>
+  <meta name="description" content="Explore our curated travel packages to destinations worldwide.">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-globe-americas me-2"></i>Wanderlust Tours
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="packages.html">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <a href="contact.html" class="btn btn-book">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="about-hero" style="background-image: url('images/hero-banner.jpg');">
+    <div class="container text-center text-white">
+      <h1>Our Travel Packages</h1>
+      <p class="lead">Discover handpicked destinations for every type of traveler</p>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item"><a href="index.html" class="text-white-50">Home</a></li>
+          <li class="breadcrumb-item text-white active" aria-current="page">Packages</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="py-4 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <h5 class="mb-0">Showing 6 packages</h5>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex justify-content-md-end gap-2">
+            <select class="form-select" style="max-width: 180px;">
+              <option selected>All Destinations</option>
+              <option>Asia</option>
+              <option>Europe</option>
+              <option>Middle East</option>
+            </select>
+            <select class="form-select" style="max-width: 180px;">
+              <option selected>Sort by: Featured</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Rating</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Grid -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Package 1: Bali -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card package-card">
+            <div class="card-img-wrapper">
+              <span class="package-badge">Popular</span>
+              <img src="images/bali.jpg" class="card-img-top" alt="Bali, Indonesia">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Magical Bali Escape</h5>
+              <p class="location"><i class="bi bi-geo-alt me-1"></i>Bali, Indonesia</p>
+              <div class="features">
+                <span><i class="bi bi-calendar3 me-1"></i>7 Days</span>
+                <span><i class="bi bi-people me-1"></i>2 People</span>
+                <span><i class="bi bi-star-fill me-1"></i>4.9</span>
+              </div>
+              <p class="price">₹1,07,999 <span>/ person</span></p>
+              <button class="btn btn-details mt-2" data-bs-toggle="modal" data-bs-target="#baliModal">View
+                Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package 2: Paris -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card package-card">
+            <div class="card-img-wrapper">
+              <span class="package-badge">Romantic</span>
+              <img src="images/paris.jpg" class="card-img-top" alt="Paris, France">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Romantic Paris Getaway</h5>
+              <p class="location"><i class="bi bi-geo-alt me-1"></i>Paris, France</p>
+              <div class="features">
+                <span><i class="bi bi-calendar3 me-1"></i>5 Days</span>
+                <span><i class="bi bi-people me-1"></i>2 People</span>
+                <span><i class="bi bi-star-fill me-1"></i>4.8</span>
+              </div>
+              <p class="price">₹1,57,999 <span>/ person</span></p>
+              <button class="btn btn-details mt-2" data-bs-toggle="modal" data-bs-target="#parisModal">View
+                Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package 3: Maldives -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card package-card">
+            <div class="card-img-wrapper">
+              <span class="package-badge">Luxury</span>
+              <img src="images/maldives.jpg" class="card-img-top" alt="Maldives">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Maldives Paradise</h5>
+              <p class="location"><i class="bi bi-geo-alt me-1"></i>Maldives</p>
+              <div class="features">
+                <span><i class="bi bi-calendar3 me-1"></i>6 Days</span>
+                <span><i class="bi bi-people me-1"></i>2 People</span>
+                <span><i class="bi bi-star-fill me-1"></i>5.0</span>
+              </div>
+              <p class="price">₹2,07,999 <span>/ person</span></p>
+              <button class="btn btn-details mt-2" data-bs-toggle="modal" data-bs-target="#maldivesModal">View
+                Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package 4: Swiss Alps -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card package-card">
+            <div class="card-img-wrapper">
+              <span class="package-badge">Adventure</span>
+              <img src="images/swiss-alps.jpg" class="card-img-top" alt="Swiss Alps">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Swiss Alps Adventure</h5>
+              <p class="location"><i class="bi bi-geo-alt me-1"></i>Switzerland</p>
+              <div class="features">
+                <span><i class="bi bi-calendar3 me-1"></i>8 Days</span>
+                <span><i class="bi bi-people me-1"></i>4 People</span>
+                <span><i class="bi bi-star-fill me-1"></i>4.9</span>
+              </div>
+              <p class="price">₹1,82,999 <span>/ person</span></p>
+              <button class="btn btn-details mt-2" data-bs-toggle="modal" data-bs-target="#swissModal">View
+                Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package 5: Tokyo -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card package-card">
+            <div class="card-img-wrapper">
+              <span class="package-badge">Cultural</span>
+              <img src="images/tokyo.jpg" class="card-img-top" alt="Tokyo, Japan">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Enchanting Japan Tour</h5>
+              <p class="location"><i class="bi bi-geo-alt me-1"></i>Tokyo, Japan</p>
+              <div class="features">
+                <span><i class="bi bi-calendar3 me-1"></i>10 Days</span>
+                <span><i class="bi bi-people me-1"></i>2 People</span>
+                <span><i class="bi bi-star-fill me-1"></i>4.8</span>
+              </div>
+              <p class="price">₹2,32,999 <span>/ person</span></p>
+              <button class="btn btn-details mt-2" data-bs-toggle="modal" data-bs-target="#tokyoModal">View
+                Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package 6: Santorini -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card package-card">
+            <div class="card-img-wrapper">
+              <span class="package-badge">Honeymoon</span>
+              <img src="images/santorini.jpg" class="card-img-top" alt="Santorini, Greece">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Santorini Bliss</h5>
+              <p class="location"><i class="bi bi-geo-alt me-1"></i>Santorini, Greece</p>
+              <div class="features">
+                <span><i class="bi bi-calendar3 me-1"></i>6 Days</span>
+                <span><i class="bi bi-people me-1"></i>2 People</span>
+                <span><i class="bi bi-star-fill me-1"></i>4.9</span>
+              </div>
+              <p class="price">₹1,49,999 <span>/ person</span></p>
+              <button class="btn btn-details mt-2" data-bs-toggle="modal" data-bs-target="#santoriniModal">View
+                Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <nav aria-label="Page navigation" class="mt-5">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2>Can't Find What You're Looking For?</h2>
+          <p>Let us create a custom travel package tailored to your preferences and budget.</p>
+          <a href="contact.html" class="btn btn-cta">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5><i class="bi bi-globe-americas me-2" style="color: #e8a838;"></i>Wanderlust Tours</h5>
+          <p>Your trusted travel partner for unforgettable adventures around the globe.</p>
+          <div class="footer-social mt-3">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Popular Destinations</h5>
+          <ul class="footer-links">
+            <li><a href="#">Bali, Indonesia</a></li>
+            <li><a href="#">Paris, France</a></li>
+            <li><a href="#">Maldives</a></li>
+            <li><a href="#">Swiss Alps</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5>Contact Info</h5>
+          <p><i class="bi bi-geo-alt me-2" style="color: #e8a838;"></i>123 Travel Street, New York, NY 10001</p>
+          <p><i class="bi bi-telephone me-2" style="color: #e8a838;"></i>+91 98765 43210</p>
+          <p><i class="bi bi-envelope me-2" style="color: #e8a838;"></i>info@wanderlusttours.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        <p class="mb-0">2026 Wanderlust Tours. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <!-- Bali Modal -->
+  <div class="modal fade" id="baliModal" tabindex="-1" aria-labelledby="baliModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="baliModalLabel">Magical Bali Escape</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/bali.jpg" class="img-fluid w-100" alt="Bali">
+          <h4 class="mt-3">Package Highlights</h4>
+          <ul>
+            <li>7 Days / 6 Nights accommodation in 5-star resort</li>
+            <li>Daily breakfast and 3 special dinners</li>
+            <li>Private temple tours including Tanah Lot and Uluwatu</li>
+            <li>Rice terrace trekking in Tegallalang</li>
+            <li>Traditional Balinese spa treatment</li>
+            <li>Airport transfers and all transportation</li>
+          </ul>
+          <h4>Itinerary Overview</h4>
+          <p>Day 1-2: Arrival and Ubud exploration<br>
+            Day 3-4: Beach activities and water sports<br>
+            Day 5-6: Cultural tours and local experiences<br>
+            Day 7: Departure</p>
+          <div class="d-flex justify-content-between align-items-center mt-4">
+            <span class="h3 text-success mb-0">₹1,07,999 / person</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="contact.html" class="btn btn-book">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Paris Modal -->
+  <div class="modal fade" id="parisModal" tabindex="-1" aria-labelledby="parisModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="parisModalLabel">Romantic Paris Getaway</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/paris.jpg" class="img-fluid w-100" alt="Paris">
+          <h4 class="mt-3">Package Highlights</h4>
+          <ul>
+            <li>5 Days / 4 Nights in boutique hotel near Champs-Elysees</li>
+            <li>Skip-the-line Eiffel Tower tickets</li>
+            <li>Louvre Museum guided tour</li>
+            <li>Seine River dinner cruise</li>
+            <li>Day trip to Versailles Palace</li>
+            <li>French wine tasting experience</li>
+          </ul>
+          <h4>Itinerary Overview</h4>
+          <p>Day 1: Arrival and Montmartre walking tour<br>
+            Day 2: Louvre and Eiffel Tower<br>
+            Day 3: Versailles day trip<br>
+            Day 4: Free day for shopping and exploration<br>
+            Day 5: Departure</p>
+          <div class="d-flex justify-content-between align-items-center mt-4">
+            <span class="h3 text-success mb-0">₹1,57,999 / person</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="contact.html" class="btn btn-book">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Maldives Modal -->
+  <div class="modal fade" id="maldivesModal" tabindex="-1" aria-labelledby="maldivesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="maldivesModalLabel">Maldives Paradise</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/maldives.jpg" class="img-fluid w-100" alt="Maldives">
+          <h4 class="mt-3">Package Highlights</h4>
+          <ul>
+            <li>6 Days / 5 Nights in overwater villa</li>
+            <li>All-inclusive meals and premium drinks</li>
+            <li>Snorkeling and diving excursions</li>
+            <li>Sunset dolphin cruise</li>
+            <li>Couples spa treatment</li>
+            <li>Speedboat transfers from Male airport</li>
+          </ul>
+          <h4>Itinerary Overview</h4>
+          <p>Day 1: Arrival and resort orientation<br>
+            Day 2-3: Water activities and beach relaxation<br>
+            Day 4: Island hopping tour<br>
+            Day 5: Spa day and sunset cruise<br>
+            Day 6: Departure</p>
+          <div class="d-flex justify-content-between align-items-center mt-4">
+            <span class="h3 text-success mb-0">₹2,07,999 / person</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="contact.html" class="btn btn-book">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiss Alps Modal -->
+  <div class="modal fade" id="swissModal" tabindex="-1" aria-labelledby="swissModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="swissModalLabel">Swiss Alps Adventure</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/swiss-alps.jpg" class="img-fluid w-100" alt="Swiss Alps">
+          <h4 class="mt-3">Package Highlights</h4>
+          <ul>
+            <li>8 Days / 7 Nights in mountain chalets and hotels</li>
+            <li>Swiss Travel Pass for unlimited train rides</li>
+            <li>Jungfrau mountain excursion</li>
+            <li>Lake Lucerne boat cruise</li>
+            <li>Chocolate and cheese factory tours</li>
+            <li>Scenic train rides on Glacier Express</li>
+          </ul>
+          <h4>Itinerary Overview</h4>
+          <p>Day 1-2: Zurich arrival and exploration<br>
+            Day 3-4: Lucerne and Mount Pilatus<br>
+            Day 5-6: Interlaken and Jungfrau region<br>
+            Day 7: Glacier Express to Zermatt<br>
+            Day 8: Departure</p>
+          <div class="d-flex justify-content-between align-items-center mt-4">
+            <span class="h3 text-success mb-0">₹1,82,999 / person</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="contact.html" class="btn btn-book">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tokyo Modal -->
+  <div class="modal fade" id="tokyoModal" tabindex="-1" aria-labelledby="tokyoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tokyoModalLabel">Enchanting Japan Tour</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/tokyo.jpg" class="img-fluid w-100" alt="Tokyo">
+          <h4 class="mt-3">Package Highlights</h4>
+          <ul>
+            <li>10 Days / 9 Nights across Tokyo, Kyoto, and Osaka</li>
+            <li>JR Rail Pass for unlimited bullet train travel</li>
+            <li>Traditional ryokan stay with onsen experience</li>
+            <li>Mount Fuji day trip</li>
+            <li>Tea ceremony and kimono experience</li>
+            <li>Guided tours of ancient temples and shrines</li>
+          </ul>
+          <h4>Itinerary Overview</h4>
+          <p>Day 1-3: Tokyo exploration and Mount Fuji<br>
+            Day 4-6: Kyoto temples and traditional experiences<br>
+            Day 7-8: Osaka food tour and Nara deer park<br>
+            Day 9-10: Return to Tokyo and departure</p>
+          <div class="d-flex justify-content-between align-items-center mt-4">
+            <span class="h3 text-success mb-0">₹2,32,999 / person</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="contact.html" class="btn btn-book">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Santorini Modal -->
+  <div class="modal fade" id="santoriniModal" tabindex="-1" aria-labelledby="santoriniModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="santoriniModalLabel">Santorini Bliss</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/santorini.jpg" class="img-fluid w-100" alt="Santorini">
+          <h4 class="mt-3">Package Highlights</h4>
+          <ul>
+            <li>6 Days / 5 Nights in cave hotel with caldera view</li>
+            <li>Private sunset sailing cruise</li>
+            <li>Wine tasting tour at local vineyards</li>
+            <li>Ancient Akrotiri archaeological site visit</li>
+            <li>Traditional Greek cooking class</li>
+            <li>Oia village walking tour</li>
+          </ul>
+          <h4>Itinerary Overview</h4>
+          <p>Day 1: Arrival and Fira exploration<br>
+            Day 2: Sailing cruise and hot springs<br>
+            Day 3: Wine tour and Oia sunset<br>
+            Day 4: Beach day and cooking class<br>
+            Day 5: Akrotiri and free time<br>
+            Day 6: Departure</p>
+          <div class="d-flex justify-content-between align-items-center mt-4">
+            <span class="h3 text-success mb-0">₹1,49,999 / person</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="contact.html" class="btn btn-book">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
