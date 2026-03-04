@@ -471,7 +471,6 @@
 .read-more {
   font-size: 1.6rem;
   font-weight: 500;
-  text-decoration: none;
   color: #333333;
   transition: 0.2s all ease-in-out;
 }

@@ -284,8 +284,20 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
 /* =================== BELOW 561px =================== */
 
 @media (max-width: 561px) {
+  .logos-container img {
+    height: 1.8rem;
+  }
+
   .heading-cta {
     font-size: 6.4rem;
+  }
+
+  .container-video {
+    height: 80vh;
+  }
+
+  .video-thumbnail {
+    height: 80vh;
   }
 }
 
@@ -320,6 +332,14 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
 
   .logos-container img {
     height: 1.8rem;
+  }
+
+  .container-video {
+    height: 64vh;
+  }
+
+  .video-thumbnail {
+    height: 64vh;
   }
 
   .heading-statistics {
@@ -419,6 +439,33 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
 
   .footer-heading {
     font-size: 1.2rem;
+  }
+
+  .container-video {
+    height: 64vh;
+  }
+
+  .video-thumbnail {
+    height: 64vh;
+  }
+}
+
+/* =================== BELOW 400px (SMALL PHONES) =================== */
+@media (max-width: 25em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .logos-container img {
+    height: 1.4rem;
+  }
+
+  .container-video {
+    height: 64vh;
+  }
+
+  .video-thumbnail {
+    height: 64vh;
   }
 }
 
