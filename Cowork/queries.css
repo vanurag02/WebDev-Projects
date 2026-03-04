@@ -96,7 +96,7 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
   }
 
   .logos img {
-    height: 2.4rem;
+    height: 1.2rem;
   }
 
   .feature-heading {
@@ -281,6 +281,14 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
   }
 }
 
+/* =================== BELOW 561px =================== */
+
+@media (max-width: 561px) {
+  .heading-cta {
+    font-size: 6.4rem;
+  }
+}
+
 /* =================== BELOW 544px (PHONES) =================== */
 
 @media (max-width: 34em) {
@@ -408,6 +416,10 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
   .logos-container img {
     height: 1.4rem;
   }
+
+  .footer-heading {
+    font-size: 1.2rem;
+  }
 }
 
 /* =================== MOBILE NAV =================== */
@@ -470,7 +482,7 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
   }
 
   .navbar-link:hover {
-    color: #cccccc;
+    color: #ffffff;
   }
 
   /* Open state */
@@ -495,5 +507,9 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
   .nav-open .icon-mobile-nav[name="close-outline"] {
     display: block;
     color: #ffffff;
+  }
+
+  .btn-primary {
+    border: 2px solid #ffffff;
   }
 }
