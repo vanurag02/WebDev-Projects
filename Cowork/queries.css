@@ -85,8 +85,8 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
   }
 
   .hero-description {
-    text-align: center;
-    max-width: 80rem;
+    font-size: 2.2rem;
+    max-width: 98rem;
     margin: 0 auto;
     margin-bottom: 2.4rem;
   }
@@ -95,8 +95,8 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
     width: 100%;
   }
 
-  .logos img {
-    height: 1.2rem;
+  .logos-container img {
+    height: 2.4rem;
   }
 
   .feature-heading {
@@ -105,6 +105,10 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
 
   .feature-description {
     font-size: 1.6rem;
+  }
+
+  .virtual-tour-description {
+    font-size: 2.3rem;
   }
 
   .statistics {
@@ -133,6 +137,40 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
 
   .footer-link {
     font-size: 1.4rem;
+  }
+}
+
+/* =================== BELOW 824px =================== */
+@media (max-width: 824px) {
+  .virtual-tour-description {
+    font-size: 2rem;
+  }
+  .heading-statistics {
+    font-size: 3.6rem;
+  }
+
+  .faq-heading {
+    font-size: 4rem;
+  }
+
+  .question-text {
+    width: 38rem;
+    line-height: 1.4;
+  }
+
+  .faq-answer {
+    width: 38rem;
+  }
+}
+
+/* =================== BELOW 768px =================== */
+@media (max-width: 49.125em) {
+  .logos-container img {
+    height: 2.4rem;
+  }
+
+  .feature-heading {
+    font-size: 2rem;
   }
 }
 
@@ -439,6 +477,14 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
 
   .footer-heading {
     font-size: 1.2rem;
+  }
+
+  .heading-virtual-tour {
+    font-size: 3.8rem;
+  }
+
+  .virtual-tour-description {
+    font-size: 1.8rem;
   }
 
   .container-video {
