@@ -140,6 +140,26 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
   }
 }
 
+/* =================== BELOW 829px =================== */
+
+@media (max-width: 829px) {
+  .hero-img {
+    width: 90%;
+  }
+
+  .feature-heading {
+    font-size: 2.2rem;
+  }
+
+  .container-video {
+    height: 80vh;
+  }
+
+  .video-thumbnail {
+    height: 80vh;
+  }
+}
+
 /* =================== BELOW 824px =================== */
 @media (max-width: 824px) {
   .virtual-tour-description {
@@ -502,16 +522,29 @@ INSTEAD, WE ASSUME THAT 1rem = 1em = 16px
     font-size: 43.75%;
   }
 
+  .hero-img {
+    border-radius: 32px;
+  }
+
   .logos-container img {
     height: 1.4rem;
   }
 
   .container-video {
-    height: 64vh;
+    height: 32vh;
   }
 
   .video-thumbnail {
-    height: 64vh;
+    height: 32vh;
+    border-radius: 32px;
+  }
+
+  .video-overlay {
+    border-radius: 32px;
+  }
+
+  .stat-img {
+    border-radius: 32px;
   }
 }
 
