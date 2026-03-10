@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+html {
+  font-family: "Google Sans", sans-serif !important;
+  line-height: 1;
+  font-weight: 400;
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
