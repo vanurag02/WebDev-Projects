@@ -73,3 +73,12 @@ btnMobileNav.addEventListener("click", function () {
   header.classList.toggle("nav-open");
   document.body.classList.toggle("nav-open");
 });
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document
+      .querySelector(this.getAttribute("href"))
+      .scrollIntoView({ behavior: "smooth" });
+  });
+});
