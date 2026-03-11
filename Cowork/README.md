@@ -1,43 +1,56 @@
 # Responsive Landing Page
 
 A fully responsive landing page built from scratch using **HTML, CSS, and JavaScript**.  
-Converted from a Figma design provided for practice purposes, with all frontend implementation done independently.
+The UI was implemented based on a **Figma design reference**, with the complete frontend developed independently.
+
+---
 
 ## Features
 
-- Fully responsive design for **mobile, tablet, and desktop**
-- Semantic HTML structure for accessibility
-- Modern CSS using **Flexbox** and **Grid**
-- Interactive UI components with vanilla JavaScript
-- Optimized performance and SEO for fast loading
-- High Lighthouse scores:
-  - Performance: 97
-  - Accessibility: 96
-  - Best Practices: 100
-  - SEO: 100
+- Fully responsive layout optimized for **mobile, tablet, and desktop**
+- Semantic HTML structure for improved **accessibility and SEO**
+- Modern CSS using **Flexbox** and **CSS Grid**
+- Interactive UI components built with **vanilla JavaScript**
+- Optimized assets and resource loading for **better performance**
+- Clean and scalable CSS structure
+
+---
+
+## Performance
+
+Lighthouse audit results:
+
+- **Performance:** 97
+- **Accessibility:** 96
+- **Best Practices:** 100
+- **SEO:** 100
+
+---
 
 ## Tech Stack
 
-- **HTML5**
-- **CSS3**
-- **JavaScript (Vanilla JS)**
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+
+---
 
 ## Live Demo
 
-[View Live Demo](https://your-live-demo-link.com)
+[View Live Demo](https://cowork-landingpage.netlify.app/)
 
-## Screenshots
+---
 
-_(Optional: include a few screenshots showing responsiveness or interactivity)_
+## What I Learned
+
+- Implementing responsive layouts using Flexbox and CSS Grid.
+- Structuring semantic HTML for better accessibility.
+- Optimizing images and resources for better Lighthouse performance.
+- Building interactive UI components using vanilla JavaScript.
+
+---
 
 ## Credits
 
-- Design reference provided for practice purposes
-- Implementation built independently
-
-## How to Run Locally
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/project-name.git
-   ```
+- Design reference provided for practice and learning purposes.
+- Frontend implementation completed independently.
