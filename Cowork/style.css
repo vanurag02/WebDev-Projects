@@ -158,23 +158,6 @@
 .hero-img {
   width: 100%;
   border-radius: 50px;
-
-  /* floating animation */
-  animation: floatImage 6s ease-in-out infinite;
-}
-
-@keyframes floatImage {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-12px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
 }
 
 /* BUTTON HOVER EFFECT */
