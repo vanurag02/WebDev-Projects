@@ -665,22 +665,6 @@
   transition-delay: 0.4s;
 }
 
-/* Hover lift effect */
-/* .blog-card {
-  border-radius: 20px;
-  overflow: hidden;
-  transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease;
-}
-
-.blog-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow:
-    rgba(0, 0, 0, 0.15) 0px 15px 25px -5px,
-    rgba(0, 0, 0, 0.05) 0px 5px 10px -5px;
-} */
-
 /* =================== BLOGS SECTION END ===================*/
 
 /* =================== FAQ SECTION START ===================*/
